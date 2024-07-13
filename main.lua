@@ -1,6 +1,12 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/MDh6Q0TF"))()
+-- Primeiro, execute o loadstring desejado
+local success, err = pcall(function()
+    loadstring(game:HttpGet('URL_DO_SEU_SCRIPT'))()
+end)
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+if not success then
+    warn("Erro ao carregar o script: " .. err)
+else
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Mm2 [2.0]-Summer Update🏄", HidePremium = false, IntroText = "HiddenScriptsHub",  SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Loading Script...",
@@ -400,3 +406,4 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+end
