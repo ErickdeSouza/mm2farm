@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/MDh6Q0TF"))()
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Mm2 [2.0]-Summer Update🏄", HidePremium = false, IntroText = "HiddenScriptsHub",  SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
@@ -11,7 +13,6 @@ OrionLib:MakeNotification({
 
 getgenv().gui = false
 
-loadstring(game:HttpGet("https://pastebin.com/raw/MDh6Q0TF"))()
 
 --[[
 Name = <string> - The name of the UI.
