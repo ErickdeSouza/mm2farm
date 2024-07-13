@@ -1,6 +1,6 @@
 -- Primeiro, execute o loadstring desejado
 local success, err = pcall(function()
-    loadstring(game:HttpGet('URL_DO_SEU_SCRIPT'))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MDh6Q0TF"))()
 end)
 
 if not success then
